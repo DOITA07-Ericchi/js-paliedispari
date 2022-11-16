@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pali(ndromi) e dispari</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 text-white">Pali(ndromi) e dispari</span>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-3">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-7 col-xl-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Scrivi una parola</h5>
+            <form class="row g-3">
+              <div class="col-12">
+                <div class="mb-3">
+                  <input id="inputPali" class="form-control gy-3" type="text" placeholder="Girafarig" aria-label="default input">
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button onclick="pali()" type="button" class="btn btn-primary">Sarà palindroma?</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-3">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-7 col-xl-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Inserisci un numero da 1 a 5</h5>
+            <form class="row g-3">
+              <div class="col-12">
+                <div class="mb-3">
+                  <input id="inputDispari" class="form-control gy-3" type="number" placeholder="3" aria-label="default input">
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnPari" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary" for="btnradio1">Pari</label>
+                
+                  <input type="radio" class="btn-check" name="btnradio" id="btnDispari" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio2">Dispari</label>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button onclick="dispari()" type="button" class="btn btn-primary">Sfida la sorte</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
