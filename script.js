@@ -9,7 +9,7 @@ function generaSommaRandom(min, max, numero){
     // Toglie decimali e prende l'input più vicino
     caso = Math.floor(caso * intervallo);
     caso = caso + min;
-    return numero + caso;
+    return parseInt(numero) + parseInt(caso);
 }
 
 function pali(){
@@ -18,7 +18,7 @@ function pali(){
 }
 
 function dispari(){
-    let numero = document.getElementById("inputDispari");
+    let numero = document.getElementById("inputDispari").value;
     let selDispari = document.getElementById("btnDispari");
     let selPari = document.getElementById("btnPari");
     let min = 1;
