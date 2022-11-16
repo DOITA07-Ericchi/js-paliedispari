@@ -1,6 +1,10 @@
 // --------------------
 function palindromo(parola){
-    
+    let split = parola.split("");
+    let reverse = split.reverse();
+    let join = reverse.join("")
+    // Oppure: return parola.split("").reverse().join("");
+    return join;
 }
 
 function generaSommaRandom(min, max, numero){
@@ -13,8 +17,14 @@ function generaSommaRandom(min, max, numero){
 }
 
 function pali(){
-    let parola = document.getElementById("inputPali").toLowerCase();
+    let parola = document.getElementById("inputPali").value.toLowerCase();
     console.log(parola);
+    let palindromoText = palindromo(parola);
+    if (palindromoText == parola) {
+        alert("È una parola palindroma!");
+    } else {
+        alert("Non è una parola palindroma...");
+    }
 }
 
 function dispari(){
