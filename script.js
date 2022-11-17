@@ -2,7 +2,7 @@
 function palindromo(parola){
     let split = parola.split("");
     let reverse = split.reverse();
-    let join = reverse.join("")
+    let join = reverse.join("");
     // Oppure: return parola.split("").reverse().join("");
     return join;
 }
